@@ -1,0 +1,1458 @@
+!SESSION 2022-06-13 13:54:29.483 -----------------------------------------------
+eclipse.buildId=4.4.1.201910232221-RELEASE
+java.version=1.8.0_331
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY oracle.eclipse.tools.application.common.services 4 0 2022-06-13 13:54:33.136
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.application.common.services [663]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+              org.eclipse.wst.wsdl.validation [832]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.model [722]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.common.services 4 0 2022-06-13 13:54:33.142
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.common.services [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+       org.eclipse.wst.wsdl.validation [832]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.common.services.ui 4 0 2022-06-13 13:54:33.147
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.common.services.ui [670]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+       org.eclipse.wst.wsdl.ui [831]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+              org.eclipse.wst.wsdl.validation [832]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.model [722]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.jaxrs.ui 4 0 2022-06-13 13:54:33.155
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.jaxrs.ui [679]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+              org.eclipse.wst.wsdl.validation [832]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [670]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+              org.eclipse.wst.wsdl.ui [831]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.common.services 4 0 2022-06-13 13:54:33.165
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.common.services [704]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.model [722]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services [669]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                     org.eclipse.wst.wsdl.validation [832]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.application.common.services [663]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.html 4 0 2022-06-13 13:54:33.182
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.html [706]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.application.common.services [663]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services [669]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                     org.eclipse.wst.wsdl.validation [832]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.html.ui 4 0 2022-06-13 13:54:33.195
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.html.ui [707]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.html [706]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.application.common.services [663]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.common.services [669]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                            org.eclipse.wst.wsdl.validation [832]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.xml.model [722]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.edit.ui [721]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [670]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+                     org.eclipse.wst.wsdl.ui [831]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [720]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.javawebapp [708]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.common.services [704]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.jsp [712]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.javawebapp 4 0 2022-06-13 13:54:33.202
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.javawebapp [708]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.common.services [704]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.common.services [669]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                            org.eclipse.wst.wsdl.validation [832]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.application.common.services [663]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf 4 0 2022-06-13 13:54:33.213
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf [709]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.common.services [704]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.common.services [669]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                            org.eclipse.wst.wsdl.validation [832]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.application.common.services [663]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp [712]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.javawebapp [708]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.html [706]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsf.facelet [710]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf.facelet 4 0 2022-06-13 13:54:33.220
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf.facelet [710]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.javawebapp [708]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.common.services [704]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.xml.model [722]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.common.services [669]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                                   org.eclipse.wst.wsdl.validation [832]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.application.common.services [663]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf.ui 4 0 2022-06-13 13:54:33.231
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf.ui [711]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsf [709]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.common.services [704]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.xml.model [722]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.common.services [669]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                                   org.eclipse.wst.wsdl.validation [832]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.application.common.services [663]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.jsp [712]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.javawebapp [708]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.html [706]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.jsf.facelet [710]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [720]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [670]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+                     org.eclipse.wst.wsdl.ui [831]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.edit.ui [721]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp.ui [713]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsp 4 0 2022-06-13 13:54:33.237
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsp [712]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.model [722]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services [669]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                     org.eclipse.wst.wsdl.validation [832]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.javawebapp [708]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.common.services [704]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.application.common.services [663]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.html [706]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsp.ui 4 0 2022-06-13 13:54:33.244
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsp.ui [713]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [720]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.javawebapp [708]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.common.services [704]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.xml.model [722]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.common.services [669]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                                          org.eclipse.wst.wsdl.validation [832]
+                                            Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.application.common.services [663]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.jsp [712]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.html [706]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [670]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+                     org.eclipse.wst.wsdl.ui [831]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.edit.ui [721]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jstl 4 0 2022-06-13 13:54:33.251
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jstl [714]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.application.common.services [663]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services [669]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                     org.eclipse.wst.wsdl.validation [832]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.javawebapp [708]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.common.services [704]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp [712]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.html [706]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jstl.ui 4 0 2022-06-13 13:54:33.262
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jstl.ui [715]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.ui [720]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.javawebapp [708]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.common.services [704]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.xml.model [722]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.common.services [669]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                                          org.eclipse.wst.wsdl.validation [832]
+                                            Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.application.common.services [663]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.jsp [712]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.html [706]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services.ui [670]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+                     org.eclipse.wst.wsdl.ui [831]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.edit.ui [721]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp.ui [713]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jstl; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jstl; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jstl [714]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.struts 4 0 2022-06-13 13:54:33.269
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.struts [716]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.common.services [704]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.common.services [669]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                            org.eclipse.wst.wsdl.validation [832]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.application.common.services [663]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.struts.ui 4 0 2022-06-13 13:54:33.277
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.struts.ui [717]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.common.services [704]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.common.services [669]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                            org.eclipse.wst.wsdl.validation [832]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.application.common.services [663]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.struts; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.struts; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.struts [716]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [670]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+              org.eclipse.wst.wsdl.ui [831]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.trinidad 4 0 2022-06-13 13:54:33.283
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.trinidad [718]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.common.services [704]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.common.services [669]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                            org.eclipse.wst.wsdl.validation [832]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.application.common.services [663]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.ui 4 0 2022-06-13 13:54:33.292
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.ui [720]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.javawebapp [708]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.common.services [704]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.xml.model [722]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.common.services [669]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                                   org.eclipse.wst.wsdl.validation [832]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.application.common.services [663]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsp; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsp; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsp [712]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.javawebapp; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.javawebapp; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.html; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.html; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.html [706]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [670]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+              org.eclipse.wst.wsdl.ui [831]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.edit.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.edit.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.xml.edit.ui [721]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.xml.edit.ui 4 0 2022-06-13 13:54:33.299
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.xml.edit.ui [721]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.application.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.application.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.application.common.services [663]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.common.services [669]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                     org.eclipse.wst.wsdl.validation [832]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.xml.model [722]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services.ui; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services.ui [670]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.ui; bundle-version="[1.2.800,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.ui; bundle-version="1.2.801.v201903050508"; singleton:="true"
+              org.eclipse.wst.wsdl.ui [831]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.xml.model; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.xml.model; bundle-version="17.2.0.201806071916"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.xml.model 4 0 2022-06-13 13:54:33.303
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.xml.model [722]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.common.services; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.common.services; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.common.services [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.700,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+              org.eclipse.wst.wsdl.validation [832]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis.consumption.ui 4 0 2022-06-13 13:54:33.480
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.consumption.ui [788]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1001.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [791]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+              org.eclipse.wst.wsdl.validation [832]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis.creation.ui 4 0 2022-06-13 13:54:33.484
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.creation.ui [789]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis.consumption.ui; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis.consumption.ui; bundle-version="1.0.1000.v201910301957"; singleton:="true"
+       org.eclipse.jst.ws.axis.consumption.ui [788]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1001.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.consumption.ui [791]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+                     org.eclipse.wst.wsdl.validation [832]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.300,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1001.v202103201626"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.consumption.ui 4 0 2022-06-13 13:54:33.488
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.consumption.ui [791]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+       org.eclipse.wst.wsdl.validation [832]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.creation.ui 4 0 2022-06-13 13:54:33.494
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.creation.ui [792]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1001.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [791]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+              org.eclipse.wst.wsdl.validation [832]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.wsdl.ui 4 0 2022-06-13 13:54:33.525
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.wsdl.ui [831]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.wsdl.validation; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.wsdl.validation; bundle-version="1.3.0.v202101270311"; singleton:="true"
+       org.eclipse.wst.wsdl.validation [832]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.wsdl.validation 4 0 2022-06-13 13:54:33.531
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.wsdl.validation [832]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-06-13 13:54:58.748
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-13 13:54:58.748
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b87ea8b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c79780,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-06-13 13:55:10.675
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\A0101013'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-06-13 13:56:31.255
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
